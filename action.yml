@@ -22,7 +22,7 @@ outputs:
     description: "false" # Whether or not there were warnings
 runs:
   using: "docker"
-  image: "docker://ghcr.io/stcarolas/cargo-audit:v1"
+  image: "docker://ghcr.io/stcarolas/cargo-audit:sha256-15593bf3a1533241ceab09276d938d03d1c821276a097d6147a3a899943d9a4b.sig"
   args:
     - ${{ inputs.path }}
     - ${{ inputs.fix }}

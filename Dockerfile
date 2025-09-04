@@ -1,4 +1,4 @@
-FROM rust:1.89.0-slim-bullseye AS builder
+FROM rust:1.85.0-slim-bullseye AS builder
 RUN apt update && apt install -yq libssl-dev pkg-config && cargo install cargo-audit --features fix
 
 FROM debian:bullseye-slim
